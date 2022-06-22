@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Parallax scrolling website | Vanilla Javascript </title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+
+    <body>
+        <header>
+            <a href="#"" class="logo">Logo</a>
+            <ul>
+                <li><a href="#" class="active">Home </a></li>
+                <li><a href="#">About </a></li>
+                <li><a href="#">Work </a></li>
+                <li><a href="#">Contact </a></li>
+            </ul>
+
+        </header>
+
+        <section>
+            <img src="images/stars.png" id="stars">
+            <img src="images/moon.png" id="moon">
+            <img src="images/mountains_behind.png" id="mountains_behind">
+            <h2 id="text">Moon Light</h2>
+            <a href="#" id="btn">Explore</a>
+            <img src="images/mountains_front.png" id="montains_front">
+        </section>
+
+        <div class="sec">
+            <h2>Parallax scrolling effects</h2>
+            <p>
+               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur sint voluptates omnis
+                quas mollitia hic officia consequuntur velit perferendis 
+                similique cum alias, quam a natus fugiat aperiam. Vitae, repellendus esse? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur sint voluptates omnis
+                quas mollitia hic officia consequuntur velit perferendis 
+                similique cum alias, quam a natus fugiat aperiam. Vitae, repellendus esse?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur sint voluptates omnis
+                quas mollitia hic officia consequuntur velit perferendis 
+                similique cum alias, quam a natus fugiat aperiam. Vitae, repellendus esse?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur sint voluptates omnis
+                quas mollitia hic officia consequuntur velit perferendis 
+                similique cum alias, quam a natus fugiat aperiam. Vitae, repellendus esse?<br><br> 
+
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur sint voluptates omnis
+                quas mollitia hic officia consequuntur velit perferendis 
+                similique cum alias, quam a natus fugiat aperiam. Vitae, repellendus esse?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur sint voluptates omnis
+                quas mollitia hic officia consequuntur velit perferendis 
+                similique cum alias, quam a natus fugiat aperiam. Vitae, repellendus esse?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur sint voluptates omnis
+                quas mollitia hic officia consequuntur velit perferendis 
+                similique cum alias, quam a natus fugiat aperiam. Vitae, repellendus esse? <br><br> 
+
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur sint voluptates omnis
+                quas mollitia hic officia consequuntur velit perferendis 
+                similique cum alias, quam a natus fugiat aperiam. Vitae, repellendus esse?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur sint voluptates omnis
+                quas mollitia hic officia consequuntur velit perferendis 
+                similique cum alias, quam a natus fugiat aperiam. Vitae, repellendus esse?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur sint voluptates omnis
+                quas mollitia hic officia consequuntur velit perferendis 
+                similique cum alias, quam a natus fugiat aperiam. Vitae, repellendus esse?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur sint voluptates omnis
+                quas mollitia hic officia consequuntur velit perferendis 
+                similique cum alias, quam a natus fugiat aperiam. Vitae, repellendus esse?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur sint voluptates omnis
+                quas mollitia hic officia consequuntur velit perferendis 
+                similique cum alias, quam a natus fugiat aperiam. Vitae, repellendus esse?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur sint voluptates omnis
+                quas mollitia hic officia consequuntur velit perferendis 
+                similique cum alias, quam a natus fugiat aperiam. Vitae, repellendus esse?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur sint voluptates omnis
+                quas mollitia hic officia consequuntur velit perferendis 
+                similique cum alias, quam a natus fugiat aperiam. Vitae, repellendus esse?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur sint voluptates omnis
+                quas mollitia hic officia consequuntur velit perferendis 
+                similique cum alias, quam a natus fugiat aperiam. Vitae, repellendus esse?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur sint voluptates omnis
+                quas mollitia hic officia consequuntur velit perferendis 
+                similique cum alias, quam a natus fugiat aperiam. Vitae, repellendus esse?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur sint voluptates omnis
+                quas mollitia hic officia consequuntur velit perferendis 
+                similique cum alias, quam a natus fugiat aperiam. Vitae, repellendus esse?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur sint voluptates omnis
+                quas mollitia hic officia consequuntur velit perferendis 
+                similique cum alias, quam a natus fugiat aperiam. Vitae, repellendus esse?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur sint voluptates omnis
+                quas mollitia hic officia consequuntur velit perferendis 
+                similique cum alias, quam a natus fugiat aperiam. Vitae, repellendus esse? <br><br> 
+
+            </p>
+        </div>
+
+        <script>
+            let stars = document.getElementById('stars');
+            let moon = document.getElementById('moon');
+            let mountains_behind = document.getElementById('mountains_behind');
+            let text = document.getElementById("text");
+            let btn = document.getElementById("btn");
+            let montains_front = document.getElementById("montains_front");
+            let header = document.querySelector("header");
+
+            window.addEventListener('scroll',function(){
+                let value = window.scrollY;
+
+                stars.style.left = value*0.25+'px';
+                moon.style.top = value*1.05+'px';
+                mountains_behind.style.top = value*0.5+'px';
+                montains_front.style.top = value*0+'px';
+                text.style.marginRight = value*4+'px';
+                text.style.marginTop = value*1.5+'px';
+                btn.style.marginTop = value*1.5+'px';
+                header.style.top = value * 0.5 + 'px';
+
+            })
+        </script>
+    </body>
+</html>
