@@ -1,3 +1,7 @@
 # Parallax-website-simple
 
-![alt text](images\demonstration.gif)
+<p align="center">
+  <img src="https://github.com/ruancastro/Parallax-website-simple/blob/main/images/demonstration.gif" alt="animated" />
+</p>
+
+
